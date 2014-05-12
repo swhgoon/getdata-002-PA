@@ -1,11 +1,7 @@
 # Peer Assessment - Getting and Cleaning Data Project
-# https://class.coursera.org/getdata-002/human_grading/
-# Steps:
-# 1 Download this script to your working directory.
-# 2 Download & unzip datafile there for the folder "UCI HAR Dataset".
-# 3 Run
-# > source("run_analysis.R")
-# > run_analysis()
+# https://class.coursera.org/getdata-003/human_grading/
+# 
+# Download & unzip datafile for the folder "UCI HAR Dataset" 1st.
 
 run_analysis <- function() {
     mainpath <- getwd()
@@ -37,3 +33,5 @@ run_analysis <- function() {
     setwd(mainpath)
     write.table(r, "tidydata.txt")
 } 
+
+run_analysis()
